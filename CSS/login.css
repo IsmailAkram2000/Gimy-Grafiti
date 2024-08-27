@@ -1,0 +1,49 @@
+body {
+    background: url('./../Images/login/login-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.site-logo {
+    width: 90%;
+}
+
+.form-control {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+}
+
+.btn-primary {
+    background-color: #ff5e5e;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff4343;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #ff4343;
+}
