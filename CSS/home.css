@@ -1,6 +1,6 @@
 /* Navbar */
 .navbar-brand {
-  color: #00ADB5  ;
+  color: #00adb5;
 }
 
 .toggle-container {
@@ -28,7 +28,7 @@
 }
 
 .toggle-label::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 2px;
@@ -40,7 +40,7 @@
 }
 
 .toggle:checked + .toggle-label {
-  background-color: #5A67D8;
+  background-color: #5a67d8;
 }
 
 .toggle:checked + .toggle-label::after {
@@ -53,7 +53,7 @@
 }
 
 .cart-icon {
-  width: 35px; 
+  width: 35px;
   height: 35px;
 }
 
@@ -80,6 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .carousel {
@@ -87,22 +88,116 @@
 }
 
 .carousel-item {
-  height: 475px; 
+  height: 475px;
+  position: relative;
 }
 
 .carousel-item img {
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
-.carousel-caption h5, .carousel-caption p {
+.carousel-caption {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Keep round shape */
+  box-shadow: none; /* Remove any shadow */
+  color: #fff; /* Arrow color */
+}
+
+.carousel-control-prev {
+  left: -7%;
+}
+
+.carousel-control-next {
+  right: -7%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+  color: green;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
   color: #fff;
 }
 
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+} */
+
 /* Cards */
 .btn-primary {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   color: #424242;
 }
 
 /* footer */
+
+/* Header Video */
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  color: white;
+  text-align: left;
+}
+
+.overlay-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.overlay-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.overlay-content a {
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .overlay-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .overlay-content p {
+    font-size: 0.8rem;
+  }
+}

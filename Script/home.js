@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check the saved theme preference
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme) {
-      htmlTag.setAttribute("data-bs-theme", savedTheme);
-      toggleCheckbox.checked = savedTheme === "dark";
+    htmlTag.setAttribute("data-bs-theme", savedTheme);
+    toggleCheckbox.checked = savedTheme === "dark";
   }
 
   // Toggle theme and save preference
   toggleCheckbox.addEventListener("change", function () {
-      const newTheme = toggleCheckbox.checked ? "dark" : "light";
-      htmlTag.setAttribute("data-bs-theme", newTheme);
-      localStorage.setItem("theme", newTheme); // Save the preference
+    const newTheme = toggleCheckbox.checked ? "dark" : "light";
+    htmlTag.setAttribute("data-bs-theme", newTheme);
+    localStorage.setItem("theme", newTheme); // Save the preference
   });
 });

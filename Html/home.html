@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gimy Grafiti</title>
+    <title>Gimy Graffiti</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,20 +11,13 @@
       crossorigin="anonymous"
     />
     <link href="./../CSS/home.css" rel="stylesheet" />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./../Script/home.js"></script>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Gimy Grafiti</a>
+        <a class="navbar-brand" href="#">Gimy Graffiti</a>
 
         <button
           class="navbar-toggler"
@@ -115,14 +108,14 @@
 
     <!-- Header -->
     <section class="header">
-      <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <div class="px-4 pt-5 my-5 text-center">
         <h1 class="display-4 fw-bold text-body-emphasis">
-          Gimy Grafiti Decoration
+          Gimy Graffiti Decoration
         </h1>
 
         <div class="col-lg-10 mx-auto">
           <p class="lead my-5">
-            Welcome to Gimy Grafiti, where we bring graffiti art to life.
+            Welcome to Gimy Graffiti, where we bring graffiti art to life.
             Explore our collection of unique street art and experience the
             creativity and style of contemporary graffiti. We also offer custom
             portraits, capturing your loved ones in our distinctive graffiti
@@ -143,81 +136,65 @@
       </div>
     </section>
 
-    <!-- carousel -->
+    <!-- Video Header -->
+    <section>
+      <div class="container-fluid p-0 mb-5">
+        <div class="video-container">
+          <video src="./../Videos/Header_Video.mp4" autoplay muted loop playsinline></video>
+          <div class="overlay-content">
+            <h1 class="text-black mb-3">The Future of Graffiti Art.</h1>
+            <p class="text-black">Join us! Create your art, capture memories, and make your mark.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Carousel -->
     <div class="w-80">
       <h2 class="pb-2 border-bottom mb-5">What We Offer</h2>
     </div>
 
     <section class="carousel-container border-bottom">
       <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-
         <div class="carousel-inner">
+          
           <div class="carousel-item active" data-bs-interval="10000">
             <img
               src="./../Images/Home/wall-painting.jpg"
               class="d-block w-100"
               alt="Wall Painting"
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Stunning Wall Art</h5>
-              <p class="">
-                Experience The Beauty And Creativity of Our Latest Wall Painting
-                Collection.
-              </p>
+              <p>Experience The Beauty And Creativity of Our Latest Wall Painting Collection.</p>
             </div>
           </div>
+          
           <div class="carousel-item" data-bs-interval="2000">
             <img
               src="./../Images/Home/portrait.jpg"
               class="d-block w-100"
               alt="Portrait"
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Portrait Drawings</h5>
-              <p>
-                Explore our collection of detailed and expressive portrait
-                drawings.
-              </p>
+              <p>Explore our collection of detailed and expressive portrait drawings.</p>
             </div>
           </div>
+          
           <div class="carousel-item">
             <img
               src="./../Images/Home/tableau.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="Tableau"
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h5>Beautiful Tableau Art</h5>
-              <p>
-                Explore our stunning tableaux, each piece capturing moments and
-                stories with artistic detail.
-              </p>
+              <p>Explore our stunning tableaux, each piece capturing moments and stories with artistic detail.</p>
             </div>
           </div>
         </div>
-
+    
         <button
           class="carousel-control-prev"
           type="button"
@@ -227,7 +204,7 @@
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-
+    
         <button
           class="carousel-control-next"
           type="button"
@@ -238,7 +215,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </section>
+    </section>    
 
     <!-- Cards -->
     <section class="container mt-5">
@@ -392,5 +369,15 @@
         </ul>
       </footer>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./../Script/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
